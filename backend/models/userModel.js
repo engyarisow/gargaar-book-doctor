@@ -1,0 +1,72 @@
+import mongoose from "mongoose";
+
+const userSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true },
+
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+    },
+
+    password: {
+      type: String,
+      required: true,
+    },
+
+    image: {
+      type: String,
+      default: "...",
+    },
+
+    address: {
+      type: Object,
+      default: {
+        line1: "",
+        line2: "",
+      },
+    },
+
+    gender: {
+      type: String,
+      default: "Not Selected",
+    },
+
+    dob: {
+      type: String,
+      default: "Not Selected",
+    },
+
+    phone: {
+      type: String,
+      default: "000000000",
+    },
+
+    // 🛒 NIDAAMKA CART-GA (KANI AYAA CUSUB)
+    cartData: { 
+      type: Object, 
+      default: {} 
+    },
+
+    // Forgot Password
+    resetPasswordToken: {
+      type: String,
+      default: null,
+    },
+
+    resetPasswordExpire: {
+      type: Date,
+      default: null,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+const userModel =
+  mongoose.models.user ||
+  mongoose.model("user", userSchema);
+
+export default userModel;
