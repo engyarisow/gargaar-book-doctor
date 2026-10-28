@@ -1,6 +1,6 @@
 // backend/routes/postRoute.js
 import express from "express";
-import Post from "../models/Post.js";
+import post from "../models/post.js";
 import authUser from "../middlewares/authUser.js";
 import authDoctor from "../middlewares/authDoctor.js";
 
