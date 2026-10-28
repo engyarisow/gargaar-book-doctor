@@ -3,7 +3,7 @@ import doctorModel from "../models/doctorModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import appointmentModel from "../models/appointmentModel.js";
-import Post from "../models/Post.js";
+import post from "../models/Post.js";
 import cloudinary from "../config/cloudinary.js"; 
 import fs from "fs";
 import mongoose from "mongoose";
