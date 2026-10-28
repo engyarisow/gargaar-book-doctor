@@ -5,7 +5,7 @@ import sendEmail from '../utils/sendEmail.js';
 import userModel from '../models/userModel.js';
 import doctorModel from '../models/doctorModel.js';
 import appointmentModel from '../models/appointmentModel.js';
-import Post from '../models/Post.js';
+import post from '../models/post.js';
 import cloudinary from "../config/cloudinary.js"; 
 import consultationsModel from '../models/consultationsModel.js';
 import orderModel from "../models/orderModel.js";
