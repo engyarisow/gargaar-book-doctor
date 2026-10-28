@@ -11,8 +11,8 @@ import hospitalModel from "../models/hospitalModel.js";
 import pharmacyModel from '../models/pharmacyModel.js';
 import consultationsModel from "../models/consultationsModel.js";
 import orderModel from "../models/orderModel.js";
+import Post from '../models/post.js';
 
-// ================= ADD DOCTOR =================
 // ================= ADD DOCTOR =================
 const addDoctor = async (req, res) => {
     try {
